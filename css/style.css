@@ -1,0 +1,179 @@
+
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    color: white;
+    background-color: #100d18;
+    background-image: linear-gradient(
+        rgba(10, 5, 18, 0.65),
+        rgba(20, 5, 15, 0.85)
+    ),
+    url("wallpaper\acheron-slashed-dream-cries-in-red-honkai-star-rail-moewalls-com.mp4");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+.site-header {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.site-header h1 {
+    color: #f3d6ff;
+    font-size: 32px;
+    text-shadow: 0 0 15px #9b42d6;
+}
+
+.site-header p {
+    color: #d4b8e8;
+    margin-top: 10px;
+}
+
+/* Contenedor del perfil */
+.perfil {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Tarjeta de presentación */
+.presentacion {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+
+    background-color: rgba(15, 10, 25, 0.85);
+    border: 1px solid #873d91;
+    border-radius: 20px;
+
+    box-shadow: 0 0 25px rgba(160, 50, 180, 0.3);
+}
+
+/* Foto de perfil */
+.foto-perfil {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 3px solid #c18aff;
+
+    box-shadow: 0 0 20px #8e44ad;
+    margin-bottom: 20px;
+}
+
+/* Títulos */
+.presentacion h2 {
+    font-size: 28px;
+    color: #f5dcff;
+    margin-bottom: 10px;
+}
+
+.presentacion h3 {
+    color: #e3a5ff;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Textos */
+.subtitulo {
+    color: #ff9fbd;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.descripcion {
+    color: #e2dce9;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Lista */
+.lista {
+    list-style: none;
+    line-height: 2;
+    color: #e7d9f5;
+}
+
+/* Botón */
+.boton {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    color: white;
+    background-color: #752b78;
+    text-decoration: none;
+
+    border: 1px solid #d79aff;
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+.boton:hover,
+.boton:focus {
+    background-color: #b53b67;
+    box-shadow: 0 0 15px #d94b8b;
+}
+
+/* Pie de página */
+.site-footer {
+    text-align: center;
+    padding: 25px;
+    color: #bba8c9;
+    font-size: 14px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    .site-header h1 {
+        font-size: 25px;
+    }
+
+    .presentacion {
+        padding: 22px;
+    }
+
+    .presentacion h2 {
+        font-size: 24px;
+    }
+}
+
+
+
+
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+    background-color: #100d18;
+}
+
+.site-header,
+.perfil,
+.site-footer {
+    position: relative;
+    z-index: 1;
+}
